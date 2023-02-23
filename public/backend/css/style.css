@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(32, 35, 42); */
+}
+.nav{
+    background-color: rgb(32, 35, 42);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 80px;
+}
+.nav-content .logo-name span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(97, 218, 251);
+}
+.nav-content .profile .name{
+
+}
+.nav-content .profile .name a{
+    color: rgb(97, 218, 251);
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-content .profile .image img{
+    height: 50px;
+    border: 1px solid rgb(97, 218, 251);
+    border-radius: 50%;
+}
+
