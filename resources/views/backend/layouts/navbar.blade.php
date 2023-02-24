@@ -9,7 +9,7 @@
                 <a href="#"><img src="{{ asset('backend/images/profile.png') }}" alt=""></a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>\
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
                   </ul>
             </div>
         </div>

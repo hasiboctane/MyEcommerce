@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('backend.index');
 });
+Route::get('/login', function(){
+    return view('custom_auth.login');
+});
+Route::get('/register', function(){
+    return view('custom_auth.registration');
+});

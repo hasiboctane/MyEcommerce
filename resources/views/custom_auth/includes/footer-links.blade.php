@@ -1,0 +1,15 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script>
+    $("#password_btn").on('click', function() {
+        let element = $("#password");
+        if (element.attr('type') == 'password') {
+            element.attr('type', 'text');
+            $(this).children('i').removeClass('bi-eye-fill').addClass('bi-eye-slash-fill');
+        } else {
+            element.attr('type', 'password');
+            $(this).children('i').addClass('bi-eye-fill').removeClass('bi-eye-slash-fill');
+        }
+    })
+</script>
