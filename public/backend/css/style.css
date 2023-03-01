@@ -11,7 +11,8 @@ body{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     height: 80px;
 }
-.nav-content .logo-name span{
+.nav-content .logo-name span a{
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
     color: rgb(97, 218, 251);

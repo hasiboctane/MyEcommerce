@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,15 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('backend.index');
-});
-Route::get('/category', function () {
-    return view('backend.category');
-});
+// Route::get('/', function () {
+//     return view('backend.index');
+// });
+
 Route::get('/login', function(){
     return view('custom_auth.login');
 });
 Route::get('/register', function(){
     return view('custom_auth.registration');
+});
+Route::prefix('dashboard')->group(function(){
+    Route::controller(CategoryController::class)->group(function(){
+        Route::get('/category','index')->name('category.index');
+        Route::get('/','dash')->name('dashboard.index');
+    });
 });

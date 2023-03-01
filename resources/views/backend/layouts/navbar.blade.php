@@ -1,7 +1,7 @@
 <nav class="nav">
     <div class="nav-content container-fluid d-flex justify-content-between align-items-center">
         <div class="logo-name text-white mx-3">
-            <span>My Ecommerce</span>
+            <span><a href="{{ route('dashboard.index') }}">My Ecommerce</a></span>
         </div>
         <div class="profile d-flex justify-content-between align-items-center mx-2 dropdown-toggle"role="button" data-bs-toggle="dropdown">
             <div class="name text-white mx-2"><a href=""><span>Hasib</span></a></div>

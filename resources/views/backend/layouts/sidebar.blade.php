@@ -7,7 +7,7 @@
             <div class="drop-content">
                 <ul class="">
                     <a href="">Add</a>
-                    <a href="">View</a>
+                    <a href="{{ route('category.index') }}">View</a>
                 </ul>
             </div>
         </div>
