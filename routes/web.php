@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('backend.index');
 });
+Route::get('/category', function () {
+    return view('backend.category');
+});
 Route::get('/login', function(){
     return view('custom_auth.login');
 });
