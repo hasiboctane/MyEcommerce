@@ -24,9 +24,13 @@ Route::get('/login', function(){
 Route::get('/register', function(){
     return view('custom_auth.registration');
 });
+
 Route::prefix('dashboard')->group(function(){
     Route::controller(CategoryController::class)->group(function(){
-        Route::get('/category','index')->name('category.index');
         Route::get('/','dash')->name('dashboard.index');
+        // Route::resource('category',CategoryController::class);
+        Route::get('/category','index')->name('category.index');
+        Route::get('/category/create','create')->name('category.create');
+        Route::post('category','store')->name('category.store');
     });
 });

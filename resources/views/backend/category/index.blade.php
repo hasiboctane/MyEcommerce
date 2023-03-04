@@ -1,13 +1,13 @@
 @extends('backend.master')
 @section('main-content')
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-8">
             <div class="card mt-3">
                 <div class="card-header">
-                    Category
+                    <h2>Category</h2>
                 </div>
                 <div class="card-body">
-                    jksjksdn
+                    Categories
                 </div>
             </div>
         </div>

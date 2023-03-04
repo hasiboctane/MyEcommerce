@@ -16,7 +16,7 @@
             {{-- Side-Content End --}}
 
             {{-- Main-Content Start --}}
-            <div class="col-md-9">
+            <div class="col-md-10">
                 @yield('main-content')
             </div>
             {{-- Main-Content End --}}

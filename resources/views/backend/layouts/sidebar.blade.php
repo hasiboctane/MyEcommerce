@@ -6,7 +6,7 @@
         <div class="drop collapse" id="category">
             <div class="drop-content">
                 <ul class="">
-                    <a href="">Add</a>
+                    <a href="{{ route('category.create') }}">Add</a>
                     <a href="{{ route('category.index') }}">View</a>
                 </ul>
             </div>
