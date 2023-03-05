@@ -32,5 +32,7 @@ Route::prefix('dashboard')->group(function(){
         Route::get('/category','index')->name('category.index');
         Route::get('/category/create','create')->name('category.create');
         Route::post('category','store')->name('category.store');
+        Route::get('/category/edit/{category}','edit')->name('category.edit');
+        Route::post('/category/{category}','update')->name('category.update');
     });
 });
