@@ -5,8 +5,8 @@
             <div class="card mt-3">
                 <div class="card-header">
                     <div class="d-flex justify-content-between">
-                        <h3 class="mb-0">Category List</h3>
-                        <a href="{{route('category.create')}}"> <button class="btn btn-success"><i class="bi bi-plus-square"></i> Add Category</button> </a>
+                        <h3 class="mb-0">Product List</h3>
+                        <a href="{{route('category.create')}}"> <button class="btn btn-success"><i class="bi bi-plus-square"></i> Add Product</button> </a>
                     </div>
                 </div>
                 <div class="card-body">
@@ -18,8 +18,9 @@
                             <tr>
                                 <th>SL.</th>
                                 <th>Name</th>
-                                <th>Slug</th>
                                 <th>Description</th>
+                                <th>Slug</th>
+                                <th>Image</th>
                                 <th>Status</th>
                                 <th>
                                     Action
@@ -36,7 +37,7 @@
                                     <td>{{ $category->name }}</td>
                                     <td>{{ $category->slug }}</td>
                                     <td>
-                                        {{ substr($category->description,0,25)}} ...
+                                        <img width="60px" height="50px" src="{{ asset('images/backend/'.$category->image) }}" alt="Image">
                                     </td>
                                     {{-- <td> {{ $category->status==1?'Active' : 'Inactive' }}</td> --}}
                                     <td>
@@ -55,9 +56,6 @@
                             @endforeach
                         </tbody>
                     </table>
-                    <div class="row">
-                        {{ $categories->links() }}
-                    </div>
                 </div>
             </div>
         </div>

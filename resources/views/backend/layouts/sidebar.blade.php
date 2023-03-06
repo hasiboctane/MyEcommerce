@@ -20,8 +20,8 @@
         <div class="drop collapse" id="subcategory">
             <div class="drop-content">
                 <ul class="">
-                    <a href="">Add</a>
-                    <a href="">View</a>
+                    <a href="{{ route('product.create') }}">Add</a>
+                    <a href="{{ route('product.index') }}">View</a>
                 </ul>
             </div>
         </div>
